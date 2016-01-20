@@ -15,7 +15,7 @@ struct BinaryTree {
   BinaryTree(int val) : left(NULL), right(NULL), data(val) { }
 };
 
-
+//supplied
 int maxHeight(BinaryTree *p);
 string intToString(int val);
 void printBranches(int branchLen, int nodeSpaceLen, int startLen, int nodesInThisLevel, const deque<BinaryTree*>& nodesQueue, ostream& out);
@@ -24,12 +24,11 @@ void printLeaves(int indentSpace, int level, int nodesInThisLevel, const deque<B
 void printPretty(BinaryTree *root, int level, int indentSpace, ostream& out);
 void add(BinaryTree *& x, int data);
 int divide(int start,int stop, BinaryTree *& y);
-void removeLeaves(BinaryTree *&root);
 BinaryTree * & find_largest(BinaryTree * & root);
 int rmv_large_two(BinaryTree * & root, BinaryTree * & prev);
 int largest_2(BinaryTree *root);
 void addHeight(BinaryTree *& root);
-int height(BinaryTree* root);
-void addHeight(BinaryTree *& root, int h, int len);
 
 
+//make this work
+void removeLeaves(BinaryTree *&root);
