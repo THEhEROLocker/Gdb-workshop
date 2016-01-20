@@ -1,26 +1,16 @@
 #include <iostream>
 using namespace std;
 
-class A
-{
-    int x;
-
-    public:
-        A()
-        {
-            x = 0;
-        }
-
-        void increment()
-        {
-           ++x;
-        }
-};
-
 int main()
 {
-    A obj;
-    obj.increment();
+    int i = 0,sum = 0;
+
+    for(int k = 0; k < 20; ++k)
+    {
+	sum += k;
+	i--;
+    }
+
     return 0;
 }
 
